@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Yusuf Cengil | Geleceğin Teknolojileri</title>
+    <meta name="description" content="Yusuf Cengil ile dijital dönüşümünüzü hızlandırın. Web, mobil ve kurumsal yazılım çözümleri.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233b82f6'/><text x='50' y='70' font-size='60' font-family='Outfit, sans-serif' font-weight='800' fill='white' text-anchor='middle'>Y</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Text Reveal Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-bg-elements">
+            <div class="preloader-blob blob-1"></div>
+            <div class="preloader-blob blob-2"></div>
+            <div class="preloader-blob blob-3"></div>
+            <!-- Ripple/Wave Elements -->
+            <div class="preloader-waves">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </div>
+        <div class="preloader-content text-reveal-preloader">
+            <h1 class="glow-text">
+                <span class="letter">Y</span><span class="letter">u</span><span class="letter">s</span><span class="letter">u</span><span class="letter">f</span>
+                <span class="space">&nbsp;</span>
+                <span class="letter">C</span><span class="letter">e</span><span class="letter">n</span><span class="letter">g</span><span class="letter">i</span><span class="letter">l</span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Background Blur Efektleri -->
+    <div class="background-elements">
+        <div class="blur-circle circle-1"></div>
+        <div class="blur-circle circle-2"></div>
+        <div class="blur-circle circle-3"></div>
+    </div>
+
+    <!-- Menü (Glassmorphism) -->
+    <header class="glass-header">
+        <div class="container header-container">
+            <a href="#" class="logo">Yusuf<span>Cengil</span></a>
+            <nav class="nav-menu">
+                <a href="#home" data-i18n="nav_home">Ana Sayfa</a>
+                <a href="#services" data-i18n="nav_services">Hizmetlerimiz</a>
+                <a href="#about" data-i18n="nav_about">Hakkımda</a>
+                <a href="hayat-hikayesi.html" target="_blank" data-i18n="nav_life_story">Kariyer Yolculuğu</a>
+                <a href="iletisim.html" data-i18n="nav_contact">İletişim</a>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="custom-dropdown" id="langDropdown">
+                    <div class="dropdown-selected">
+                        <span id="currentLangText">TR</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="dropdown-options">
+                        <li data-value="tr">Türkçe (TR)</li>
+                        <li data-value="en">English (EN)</li>
+                        <li data-value="ar">العربية (AR)</li>
+                    </ul>
+                </div>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <canvas id="networkCanvas"></canvas>
+            <div class="container hero-container-z">
+                <div class="hero-content fade-in">
+                    <span class="badge" data-i18n="hero_badge">Yeni Nesil Yazılım Çözümleri</span>
+                    <h1 data-i18n="hero_title">Fikirlerinizi Kodla <span>Geleceğe</span> Taşıyoruz</h1>
+                    <div class="hero-name">
+                        <span class="letter">Y</span><span class="letter">U</span><span class="letter">S</span><span class="letter">U</span><span class="letter">F</span>
+                        <span class="letter space">&nbsp;</span>
+                        <span class="letter">C</span><span class="letter">E</span><span class="letter">N</span><span class="letter">G</span><span class="letter">İ</span><span class="letter">L</span>
+                    </div>
+                    <p data-i18n="hero_desc">Yusuf Cengil olarak, işletmenizi dijital dünyada bir adım öne çıkaracak ölçeklenebilir, modern ve güvenilir teknoloji çözümleri üretiyorum.</p>
+                    <div class="hero-buttons">
+                        <a href="iletisim.html" class="btn btn-primary" data-i18n="btn_contact">Projeleriniz İçin Bana Ulaşın</a>
+                        <a href="#services" class="btn btn-outline" data-i18n="btn_services">Hizmetleri Keşfet</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mouse Scroll İndikatörü -->
+            <div class="scroll-indicator" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hizmetler -->
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2 data-i18n="services_title">Neler Yapıyoruz?</h2>
+                    <p data-i18n="services_desc">İhtiyacınıza özel tam kapsamlı yazılım hizmetleri</p>
+                </div>
+                <div class="services-carousel-container fade-in">
+                    <div class="services-carousel">
+                        <div class="glass-card service-card slide item-left" onclick="moveToSelected(this)">
+                            <div class="icon-wrapper"><i class="fas fa-code"></i></div>
+                            <h3 data-i18n="srv1_title">Web Geliştirme</h3>
+                            <p data-i18n="srv1_desc">Modern frameworkler ile hızlı, güvenli ve SEO uyumlu web projeleri tasarlıyoruz.</p>
+                        </div>
+                        <div class="glass-card service-card slide item-center" onclick="moveToSelected(this)">
+                            <div class="icon-wrapper"><i class="fas fa-mobile-screen"></i></div>
+                            <h3 data-i18n="srv2_title">Mobil Uygulama</h3>
+                            <p data-i18n="srv2_desc">iOS ve Android platformlarında yüksek performanslı cross-platform uygulamalar.</p>
+                        </div>
+                        <div class="glass-card service-card slide item-right" onclick="moveToSelected(this)">
+                            <div class="icon-wrapper"><i class="fas fa-server"></i></div>
+                            <h3 data-i18n="srv3_title">Kurumsal Yazılım</h3>
+                            <p data-i18n="srv3_desc">İş süreçlerinizi optimize edecek, entegre ve tamamen size özel ERP/CRM çözümleri.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hakkımızda -->
+        <section id="about" class="about section">
+            <div class="container about-container fade-in">
+                <div class="about-content">
+                    <h2 data-i18n="about_title">Ben Kimim?</h2>
+                    <p data-i18n="about_p1">Yusuf Cengil, teknolojiyi bir araçtan ziyade dönüşümün temeli olarak gören tutkulu bir yazılım geliştiricisidir. Yılların deneyimi ve modern teknoloji yığınlarını birleştirerek, projelerin dijital potansiyelini en üst düzeye çıkarıyorum.</p>
+                    <p data-i18n="about_p2">Sadece kod yazmıyor, işletmenizin hedeflerini anlayarak stratejik teknoloji çözümleri üretiyorum.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="ft1">İleri Teknoloji Stack'leri</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="ft2">Çevik (Agile) Geliştirme Yaklaşımı</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="ft3">7/24 Teknik Destek ve Bakım</span></li>
+                    </ul>
+                </div>
+                <!-- Yeni dairesel yörünge animasyonu -->
+                <div class="about-orbit-container">
+                    <div class="orbit-center">
+                        <span class="initials">YC</span>
+                    </div>
+                    <div class="orbit-path path-1">
+                        <div class="orbit-item" title="120+ Proje"><i class="fas fa-rocket"></i></div>
+                        <div class="orbit-item" title="%100 Memnuniyet"><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="orbit-path path-2">
+                        <div class="orbit-item" title="5+ Yıl Deneyim"><i class="fas fa-history"></i></div>
+                        <div class="orbit-item" title="Full-Stack"><i class="fas fa-layer-group"></i></div>
+                        <div class="orbit-item" title="Modern Stack"><i class="fas fa-code"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- İletişim bölümü 'iletisim.html' dosyasına taşındı -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="#" class="logo">Yusuf<span>Cengil</span></a>
+                <p data-i18n="footer_desc">Dijital Geleceğiniz İçin Güvenilir İş Ortağınız.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/yusuf-cengil-b696963b3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/25020091030YusufCengil" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:yusufcengil23@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_right">&copy; 2026 Yusuf Cengil. Tüm hakları saklıdır.</p>
+            <div class="footer-dev" data-i18n="footer_dev">
+                Developed by Yusuf Cengil<br>
+                Tel: +90 533 569 53 44
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/905335695344" target="_blank" class="whatsapp-float" id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="signature-bottom">YusufCengil</div>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

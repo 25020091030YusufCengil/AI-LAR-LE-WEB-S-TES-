@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Yusuf Cengil | Geleceğin Teknolojileri</title>
+    <meta name="description" content="Yusuf Cengil ile dijital dönüşümünüzü hızlandırın. Web, mobil ve kurumsal yazılım çözümleri.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233b82f6'/><text x='50' y='70' font-size='60' font-family='Outfit, sans-serif' font-weight='800' fill='white' text-anchor='middle'>Y</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader / Splash Ekranı -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content fade-in visible">
+            <i class="fas fa-headset preloader-icon"></i>
+            <h1 class="preloader-title" data-i18n="preloader_title">7/24 Kesintisiz İletişim</h1>
+            <p data-i18n="preloader_desc">Projelerinizi hayata geçirmek için buradayım...</p>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Background Blur Efektleri -->
+    <div class="background-elements">
+        <div class="blur-circle circle-1"></div>
+        <div class="blur-circle circle-2"></div>
+        <div class="blur-circle circle-3"></div>
+    </div>
+
+    <header class="glass-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Yusuf<span>Cengil</span></a>
+            <nav class="nav-menu">
+                <a href="index.html" data-i18n="nav_home">Ana Sayfa</a>
+                <a href="index.html#services" data-i18n="nav_services">Hizmetlerimiz</a>
+                <a href="index.html#about" data-i18n="nav_about">Hakkımda</a>
+                <a href="hayat-hikayesi.html" target="_blank" data-i18n="nav_life_story">Kariyer Yolculuğu</a>
+                <a href="iletisim.html" class="active" data-i18n="nav_contact">İletişim</a>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="custom-dropdown" id="langDropdown">
+                    <div class="dropdown-selected">
+                        <span id="currentLangText">TR</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="dropdown-options">
+                        <li data-value="tr">Türkçe (TR)</li>
+                        <li data-value="en">English (EN)</li>
+                        <li data-value="ar">العربية (AR)</li>
+                    </ul>
+                </div>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section id="contact" class="contact section">
+            <div class="container section-title fade-in">
+                <h2 data-i18n="contact_page_title">İletişim Bilgileri</h2>
+                <p data-i18n="contact_page_desc">Projeleriniz için benimle iletişime geçin.</p>
+            </div>
+            <div class="container contact-container">
+                <div class="glass-card contact-info fade-in">
+                    <h3 data-i18n="contact_reach">Bana Ulaşın</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>yusufcengil23@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+90 533 569 53 44</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Kahramanmaraş, Onikişubat</p>
+                    </div>
+                </div>
+                <form class="glass-card contact-form fade-in" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Adınız Soyadınız" data-i18n="form_name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="E-posta Adresiniz" data-i18n="form_email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" required>
+                            <option value="" disabled selected data-i18n="form_subject">Konu Seçiniz</option>
+                            <option value="web" data-i18n="form_opt1">Web Geliştirme</option>
+                            <option value="mobile" data-i18n="form_opt2">Mobil Uygulama</option>
+                            <option value="other" data-i18n="form_opt3">Diğer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Mesajınız..." data-i18n="form_msg" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" data-i18n="form_btn">Mesaj Gönder</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="index.html" class="logo">Yusuf<span>Cengil</span></a>
+                <p data-i18n="footer_desc">Dijital Geleceğiniz İçin Güvenilir İş Ortağınız.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/yusuf-cengil-b696963b3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/25020091030YusufCengil" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:yusufcengil23@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_right">&copy; 2026 Yusuf Cengil. Tüm hakları saklıdır.</p>
+            <div class="footer-dev" data-i18n="footer_dev">
+                Developed by Yusuf Cengil<br>
+                Tel: +90 533 569 53 44
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/905335695344" target="_blank" class="whatsapp-float" id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <div class="signature-bottom">YusufCengil</div>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
